@@ -21,9 +21,34 @@
   
   <script>
 
-    let ul = document.querySelector("ul");
-    ul.addEventListener("click", function(event){
-      
+    let ul = document.querySelector('ul');
+    ul.addEventListener("click", function(e){
+      console.log(e.target.id);
+
+      // if(e.target.id == "pink"){
+      //   alert("pink image clicked")
+
+      // }
+      // else if(e.target.id == "orange"){
+      //   alert("orange image clicked")
+      // }
+
+      switch(e.target.id){
+        case "orange":
+          alert("orange image clicked");
+          break;
+        case "pink":
+          alert("pink image clicked");
+          break;
+        case "green":
+          alert("green image"):
+          break;
+        case "purple":
+          alert("purple image"):
+          break;
+        default:
+          break;
+      }
     })
 
     
